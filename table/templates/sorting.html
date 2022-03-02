@@ -1,0 +1,21 @@
+<form action="" method="GET">
+  <select class="form-control input-sm" name="column" id="id_column" onchange='this.form.submit()'>
+      <option disabled selected>Выберите колонку для фильтрации</option>
+      <option value="name">Название</option>
+      <option value="count">Количество</option>
+      <option value="distance">Расстояние</option>
+  </select>
+    <select class="form-control input-sm" name="condition" id="id_condition" onchange='this.form.submit()'>
+        <option disabled selected>Условие</option>
+        <option value="equals">равно</option>
+        <option value="contains">содержит</option>
+        <option value="over">больше</option>
+        <option value="less">меньше</option>
+    </select>
+
+    <input type="text" class="form-control input-sm" name="q"  onchange='this.form.submit()' placeholder="Значения для фильтрации" value="" >
+
+    <noscript><input type="submit" value="Submit"></noscript>
+</form>
+
+
